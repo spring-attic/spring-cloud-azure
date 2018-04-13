@@ -1,6 +1,6 @@
 # spring-cloud-azure
 
-This project pulls together the efforts being worked on in conjunction with Microsoft
+This project lists the ongoing efforts being worked on in conjunction with Microsoft
 to integrate Spring applications with Azure Cloud Services.  It hosts the gh-pages branch
 that provides the content for https://cloud.spring.io/spring-cloud-azure/.
 
