@@ -10,5 +10,5 @@ point into the Microsoft repositories that provide code that support Spring appl
 - https://github.com/Microsoft/azure-spring-boot
   Starters/Autoconfiguration for active directory, document db, keyvault, media services, service bus, storage.
 
-- https://github.com/Microsoft/spring-data-documentdb
-  Spring Data DocumentDB support.
+- https://github.com/Microsoft/spring-data-cosmosdb
+  Access data with Azure Cosmos DB
