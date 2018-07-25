@@ -13,7 +13,7 @@ Spring.ProjectDocumentationWidget = function () {
   var documentationEl = $('.js-documentation-widget');
 
   //var projectUrl = apiBaseUrl + "/project_metadata/" + projectId;
-  var projectUrl = "https://raw.githubusercontent.com/spring-cloud/spring-cloud-azure/gh-pages/releases"
+  var projectUrl = "https://cloud.spring.io/spring-cloud-azure/releases.json"
   var promise = Spring.loadProject(projectUrl);
 
   promise.then(function (project) {
