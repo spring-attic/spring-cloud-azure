@@ -30,7 +30,7 @@
         "generalAvailability": true,
         "preRelease": false,
         "versionDisplayName": "2.0.4",
-        "current": false,
+        "current": true,
         "snapshot": false
     }, {
         "releaseStatus": "SNAPSHOT",
@@ -90,7 +90,27 @@
     "stackOverflowTagList": ["spring-cloud-azure"],
     "topLevelProject": false,
     "parentId": "spring-cloud",
-    "projectReleases": [{
+    "projectReleases": [
+	    {
+        "releaseStatus": "RELEASE",
+        "refDocUrl": "http://docs.spring.io/spring-cloud-azure/docs/1.1.0.M1/reference/htmlsingle/",
+        "apiDocUrl": "http://docs.spring.io/spring-cloud-azure/docs/1.1.0.M1/api/",
+        "groupId": "com.microsoft.azure",
+        "artifactId": "azure-spring-boot",
+        "repository": {
+            "id": "maven-central",
+            "name": "Maven Central",
+            "url": "https://repo.maven.apache.org/maven2",
+            "snapshotsEnabled": false
+        },
+        "version": "2.0.4",
+        "generalAvailability": true,
+        "preRelease": false,
+        "versionDisplayName": "2.0.4",
+        "current": true,
+        "snapshot": false
+    },
+    {
         "releaseStatus": "PRERELEASE",
         "refDocUrl": "http://docs.spring.io/spring-cloud-azure/docs/1.1.0.M1/reference/htmlsingle/",
         "apiDocUrl": "http://docs.spring.io/spring-cloud-azure/docs/1.1.0.M1/api/",
