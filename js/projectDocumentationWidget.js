@@ -12,7 +12,8 @@ Spring.ProjectDocumentationWidget = function () {
   var mavenWidgetEl = $('.js-download-maven-widget');
   var documentationEl = $('.js-documentation-widget');
 
-  var projectUrl = apiBaseUrl + "/project_metadata/" + projectId;
+  //var projectUrl = apiBaseUrl + "/project_metadata/" + projectId;
+  var projectUrl = "https://raw.githubusercontent.com/spring-cloud/spring-cloud-azure/gh-pages/releases"
   var promise = Spring.loadProject(projectUrl);
 
   promise.then(function (project) {
