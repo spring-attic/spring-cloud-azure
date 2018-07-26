@@ -13,7 +13,7 @@ Spring.ProjectDocumentationWidget = function () {
   var documentationEl = $('.js-documentation-widget');
 
   //var projectUrl = apiBaseUrl + "/project_metadata/" + projectId;
-  var projectUrl = "https://cloud.spring.io/spring-cloud-azure/releases"
+  var projectUrl = "https://cloud.spring.io/spring-cloud-azure/releases.json"
   var promise = Spring.loadProject(projectUrl);
 
   promise.then(function (project) {
@@ -41,7 +41,7 @@ Spring.buildQuickStartWidget = function (quickStartEl, mavenWidgetEl, project) {
 
 Spring.loadProject = function (url) {
   return $.ajax(url, {
-    dataType: 'jsonp',
+    dataType: 'json',
     processData: false
   }).then(function (value) {
       return new Spring.Project(value);
