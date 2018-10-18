@@ -1,6 +1,6 @@
 {
     "id": "spring-cloud-azure",
-    "name": "Spring Cloud Azure",
+    "name": "Spring Boot Azure",
     "repoUrl": "https://github.com/Microsoft/azure-spring-boot",
     "siteUrl": "http://cloud.spring.io/spring-cloud-azure",
     "category": "active",
