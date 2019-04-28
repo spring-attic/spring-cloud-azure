@@ -8,7 +8,13 @@ This project will not host source code directly, but provides a convenient jumpi
 point into the Microsoft repositories that provide code that support Spring applications:
 
 - https://github.com/Microsoft/azure-spring-boot
-  Starters/Autoconfiguration for active directory, document db, keyvault, media services, service bus, storage.
+  Starters/Autoconfiguration for Azure managed services (e.g. Azure Active directory, Azure Key Vault, Azure Storage)
 
 - https://github.com/Microsoft/spring-data-cosmosdb
   Access data with Azure Cosmos DB
+
+- https://github.com/Microsoft/spring-data-gremlin
+  Access data with any Gremlin-compatible data store, and also with Azure Cosmos DB
+
+- https://github.com/Microsoft/spring-cloud-azure/
+  Seamless Spring Cloud integration with Azure managed services (e.g. Azure Event Hubs, Azure Service Bus)
