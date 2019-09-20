@@ -31,10 +31,10 @@
             "url": "https://repo.maven.apache.org/maven2",
             "snapshotsEnabled": false
         },
-        "version": "2.1.6",
+        "version": "2.1.7",
         "generalAvailability": true,
         "preRelease": false,
-        "versionDisplayName": "2.1.6",
+        "versionDisplayName": "2.1.7",
         "current": true,
         "snapshot": false
     },
@@ -50,10 +50,10 @@
             "url": "https://repo.spring.io/libs-milestone",
             "snapshotsEnabled": false
         },
-        "version": "2.1.7",
+        "version": "2.1.8",
         "generalAvailability": false,
         "preRelease": false,
-        "versionDisplayName": "2.1.7",
+        "versionDisplayName": "2.1.8",
         "current": true,
         "snapshot": true
     },
