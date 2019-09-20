@@ -1,7 +1,7 @@
 {
     "id": "spring-cloud-azure",
-    "name": "Spring Boot Azure",
-    "repoUrl": "https://github.com/Microsoft/azure-spring-boot",
+    "name": "Spring Cloud Azure",
+    "repoUrl": "https://github.com/spring-cloud/spring-cloud-azure",
     "siteUrl": "http://cloud.spring.io/spring-cloud-azure",
     "category": "active",
     "rawBootConfig": "",
@@ -21,8 +21,8 @@
     "projectReleases": [
 	    {
         "releaseStatus": "RELEASE",
-        "refDocUrl": "https://docs.microsoft.com/en-us/java/azure/spring-framework/spring-boot-starters-for-azure?view=azure-java-stable",
-        "apiDocUrl": "https://docs.microsoft.com/en-us/java/azure/spring-framework/spring-boot-starters-for-azure?view=azure-java-stable",
+        "refDocUrl": "https://docs.microsoft.com/en-us/java/azure/spring-framework/spring-boot-starters-for-azure",
+        "apiDocUrl": "https://docs.microsoft.com/en-us/java/azure/spring-framework/spring-boot-starters-for-azure",
         "groupId": "com.microsoft.azure",
         "artifactId": "azure-spring-boot",
         "repository": {
@@ -31,31 +31,50 @@
             "url": "https://repo.maven.apache.org/maven2",
             "snapshotsEnabled": false
         },
-        "version": "2.0.4",
+        "version": "2.1.7",
         "generalAvailability": true,
         "preRelease": false,
-        "versionDisplayName": "2.0.4",
+        "versionDisplayName": "2.1.7",
         "current": true,
         "snapshot": false
     },
     {
         "releaseStatus": "SNAPSHOT",
-        "refDocUrl": "https://docs.microsoft.com/en-us/java/azure/spring-framework/spring-boot-starters-for-azure?view=azure-java-stable",
-        "apiDocUrl": "https://docs.microsoft.com/en-us/java/azure/spring-framework/spring-boot-starters-for-azure?view=azure-java-stable",
+        "refDocUrl": "https://docs.microsoft.com/java/azure/spring-framework",
+        "apiDocUrl": "https://docs.microsoft.com/java/azure/spring-framework",
         "groupId": "org.springframework.cloud",
-        "artifactId": "spring-cloud-azure",
+        "artifactId": "azure-spring-boot",
         "repository": {
             "id": "spring-milestones",
             "name": "Spring Milestones",
             "url": "https://repo.spring.io/libs-milestone",
             "snapshotsEnabled": false
         },
-        "version": "2.0.5",
+        "version": "2.1.8",
         "generalAvailability": false,
         "preRelease": false,
-        "versionDisplayName": "2.0.5",
-        "current": false,
+        "versionDisplayName": "2.1.8",
+        "current": true,
         "snapshot": true
+    },
+    {
+        "releaseStatus": "RELEASE",
+        "refDocUrl": "https://docs.microsoft.com/java/azure/spring-framework",
+        "apiDocUrl": "https://docs.microsoft.com/java/azure/spring-framework",
+        "groupId": "com.microsoft.azure",
+        "artifactId": "spring-cloud-azure",
+        "repository": {
+            "id": "maven-central",
+            "name": "Maven Central",
+            "url": "https://repo.maven.apache.org/maven2",
+            "snapshotsEnabled": false
+        },
+        "version": "1.1.0",
+        "generalAvailability": false,
+        "preRelease": true,
+        "versionDisplayName": "1.1.0 (Spring Cloud)",
+        "current": true,
+        "snapshot": false
     }
     ],
     "projectSamples": []

@@ -1,6 +1,6 @@
 ---
 # The name of your project
-title: Azure Spring Boot
+title: Spring Cloud Azure
 
 badges:
 
@@ -9,9 +9,14 @@ badges:
 
   # Customize your project's badges. Delete any entries that do not apply.
   custom:
-    - name: Azure Spring Boot (GitHub)
-      url:  https://github.com/Microsoft/azure-spring-boot
+    - name: Spring Cloud Azure (GitHub)
+      url:  https://github.com/spring-cloud/spring-cloud-azure
       icon: github
+
+   custom:
+   - name:  Spring Cloud (GitHub)
+      url:  https://stackoverflow.com/questions/tagged/spring-cloud
+      icon: stackoverflow
 
 ---
 <!DOCTYPE HTML>
@@ -22,102 +27,113 @@ badges:
 
 {% capture billboard_description %}
 
-Spring Framework and its ecosystem are widely adopted by Java developers to build web applications. To minimize efforts of running Spring apps in the cloud, developers can adopt Spring support for Azure to easily integrate Azure cloud-based technologies into their applications.
+The Spring Cloud for Microsoft Azure is designed to provide seamless Spring integration with Azure managed services. Developers can adopt a Spring-idiomatic way to take advantage of managed services on Azure, with only few lines of configuration and minimal code changes.
 
 {% endcapture %}
 
 {% capture main_content %}
 
-## Features
+## Spring Cloud Features
 
-* [Spring Security Azure AD](https://azure.microsoft.com/en-us/blog/use-azure-active-directory-with-spring-security-5-0-for-oauth-2-0/) - Enterprise-grade authentication and authorization for Spring Security.<br><br>
-* [Spring Cloud Stream with Azure Event Hub](https://docs.microsoft.com/java/azure/spring-framework/configure-spring-cloud-stream-binder-java-app-azure-event-hub) - Message-driven applications with Azure Event Hub service.<br><br>
-* [Spring Resource with Azure Storage](https://docs.microsoft.com/java/azure/spring-framework/configure-spring-boot-starter-java-app-with-azure-storage) – Spring Resource abstraction for Azure Storage service.<br><br>
-* [Spring Data Azure Cosmos DB SQL API](https://azure.microsoft.com/en-us/blog/spring-data-azure-cosmos-db-nosql-data-access-on-azure/) – Spring Data module for NoSQL data access on Azure.<br><br>
-* [Spring Data Gremlin](https://azure.microsoft.com/en-us/blog/spring-data-gremlin-for-azure-cosmos-db-graph-api/) - Spring Data module for Graph databases using Gremlin query language.<br><br>
-* Spring Boot Starters for Azure:
-   * [Azure Key Vault](https://docs.microsoft.com/java/azure/spring-framework/configure-spring-boot-starter-java-app-with-azure-key-vault?view=azure-java-stable) - Manage application secrets and keys.
-   * [Azure Active Directory](https://docs.microsoft.com/java/azure/spring-framework/configure-spring-boot-starter-java-app-with-azure-active-directory?view=azure-java-stable) – Wire up enterprise-grade authentication and authorization.
-   * [Azure Redis Cache](https://docs.microsoft.com/java/azure/spring-framework/configure-spring-boot-initializer-java-app-with-redis-cache?view=azure-java-stable) – Build fast and high-performing applications.
-<br><br>
-  
-* Azure provides support for the following Spring Data projects through the Azure data services that are listed below:
-  * **Spring Data JPA** - [Azure MySQL](https://azure.microsoft.com/services/mysql), [Microsoft SQL Server](https://docs.microsoft.com/azure/sql-database/)
-  * **Spring Data JDBC** - [Azure MySQL](https://azure.microsoft.com/services/mysql)
-  * **Spring Data MongoDB** - Azure MongoDB (via [Azure CosmosDB](https://azure.microsoft.com/services/cosmos-db/))* **Spring Data MySQL** - [Azure Database for MySQL](https://azure.microsoft.com/services/mysql/) (For an example, see [Build a Java and MySQL web app in Azure](https://docs.microsoft.com/azure/app-service/app-service-web-tutorial-java-mysql).)	
-  * **Spring Data for Apache Cassandra** - Azure Cassandra (via [Azure CosmosDB](https://azure.microsoft.com/services/cosmos-db/))	
-  * **Spring Data Redis** - [Azure Redis Cache](https://azure.microsoft.com/services/cache/) (For an example, see [Configure a Spring Boot Initializer app to use Redis in the cloud with Azure Redis Cache](https://docs.microsoft.com/java/azure/spring-framework/configure-spring-boot-initializer-java-app-with-redis-cache).)
- 
-* Additional cloud-computing features :
-   * Azure App Service - [Quickstart: Create a Java web app in App Service on Linux](https://docs.microsoft.com/azure/app-service/containers/quickstart-java)
-   * Container - [Deploy a containerized Spring Boot app to Azure](https://docs.microsoft.com/java/azure/spring-framework/deploy-containerized-spring-boot-java-app-with-maven-plugin)
-   * Kubernetes - [Deploy a Spring Boot Application on a Kubernetes Cluster in the Azure Container Service](https://docs.microsoft.com/java/azure/spring-framework/deploy-spring-boot-java-app-on-kubernetes)
-  <br><br>
-* Additional tooling support:
-   * [Spring Boot Extension Pack for Visual Studio Code](https://marketplace.visualstudio.com/items?itemName=Pivotal.vscode-boot-dev-pack) – For more information, see [Build Spring Boot Apps with VS Code](https://code.visualstudio.com/docs/java/java-spring-boot).
+* Spring Cloud Stream Binder for [Azure Event Hubs](https://azure.microsoft.com/services/event-hubs/) (native API and Apache Kafka API), including Spring Integration Channel Adapters
+* Spring Cloud Stream Binder for [Azure Service Bus](https://azure.microsoft.com/services/service-bus/) Topic and Queue, including Spring Integration Channel Adapters
+* Spring Resource Abstraction for [Azure Storage](https://azure.microsoft.com/services/storage/)
+* Spring Cache auto-configuration for [Azure Cache for Redis](https://azure.microsoft.com/services/cache/)
+* Spring Cloud Config for [Azure App Configuration](https://docs.microsoft.com/azure/azure-app-configuration/) (Preview)
+
+## Spring Boot Support
+
+There are four entries in Spring Initializr for Spring Cloud Azure:
+
+* Azure support
+* Spring Boot Starter for [Azure Active Directory](https://azure.microsoft.com/services/active-directory/)
+* Spring Boot Starter for [Azure Key Vault](https://azure.microsoft.com/services/key-vault/) 
+* Spring Boot Starter for [Azure Storage](https://azure.microsoft.com/services/storage/)
+
+You can also get starters for the following services from the [Azure Spring Boot repo](https://github.com/Microsoft/azure-spring-boot) on GitHub:
+
+* Spring Boot Starter for [Azure Active Directory B2C](https://azure.microsoft.com/services/active-directory-b2c/)
+* Spring Boot Starter for [Azure Cosmos DB](https://azure.microsoft.com/services/cosmos-db/)
+* Spring Boot Starter for [Azure Service Bus](https://azure.microsoft.com/services/service-bus/)
+* Spring Boot Starter for Spring Data Gremlin with [Azure Cosmos DB](https://azure.microsoft.com/services/cosmos-db/) and any Gremlin-compatible data store
+* Spring Boot Starter for [Micrometer with Application Insights](https://docs.microsoft.com/azure/azure-monitor/app/micrometer-java)
+* Spring Boot Starter for [Azure Media Services](https://azure.microsoft.com/services/media-services/)
+
+The Azure Support entry contains auto-configuration support for Azure managed services. It also provides the capability to automatically inject credentials from Cloud Foundry into your applications using Azure managed services. 
+Let us take Spring Boot Starter for Azure Service Bus as an example. You can add the usual <code>azure-servicebus</code> dependency to your project and the Spring Boot auto-configuration will automatically configure your Spring application with Azure Service Bus.
+<div class="language-xml highlighter-rouge">
+	<div class="highlight">
+		<pre class="highlight">
+<code><span class="nt">&lt;dependency&gt;</span> 
+  <span class="nt">&lt;groupId&gt;</span>com.microsoft.azure<span class="nt">&lt;/groupId&gt;</span>
+  <span class="nt">&lt;artifactId&gt;</span>azure-servicebus<span class="nt">&lt;/artifactId&gt;</span>
+<span class="nt">&lt;/dependency&gt;</span></code></pre>
+	</div>
+</div>
+Alternatively, you can add the full name of the Spring Boot Starter for Azure Service Bus.
+<div class="language-xml highlighter-rouge">
+	<div class="highlight">
+		<pre class="highlight">
+<code><span class="nt">&lt;dependency&gt;</span>
+  <span class="nt">&lt;groupId&gt;</span>com.microsoft.azure<span class="nt">&lt;/groupId&gt;</span>
+  <span class="nt">&lt;artifactId&gt;</span>azure-servicebus-spring-boot-starter<span class="nt">&lt;/artifactId&gt;</span>
+<span class="nt">&lt;/dependency&gt;</span></code></pre>
+	</div>
+</div>
+
+## Spring Data Support
+
+Azure provides support for the following Spring Data projects through the Azure data services that are listed below:
+
+* **Spring Data JPA** - [Azure MySQL](https://azure.microsoft.com/services/mysql), [Azure PostgreSQL](https://azure.microsoft.com/services/postgresql/), [Microsoft SQL Server](https://docs.microsoft.com/azure/sql-database/)
+* **Spring Data JDBC** - [Azure MySQL](https://azure.microsoft.com/services/mysql), [Azure PostgreSQL](https://azure.microsoft.com/services/postgresql/), [Microsoft SQL Server](https://docs.microsoft.com/azure/sql-database/)
+* **Spring Data MongoDB** - Azure MongoDB (via [Azure Cosmos DB](https://azure.microsoft.com/services/cosmos-db/))
+* **Spring Data for Apache Cassandra** - Azure Cassandra (via [Azure CosmosDB](https://azure.microsoft.com/services/cosmos-db/))	
+* **Spring Data Azure Cosmos DB** - [Azure Cosmos DB](https://azure.microsoft.com/services/cosmos-db/)
+* **Spring Data Redis** - [Azure Cache for Redis](https://azure.microsoft.com/services/cache/) 
+
 
 <span id="quick-start"></span>
 
+## Getting Started Guides
+
+The [Spring on Azure quickstarts](https://docs.microsoft.com/java/azure/spring-framework) and tutorials will show you how to develop and deploy Spring apps to the cloud.  
+
+Additional guides to deploy a Spring Boot application to
+
+* [Azure App Service on Linux](https://docs.microsoft.com/java/azure/spring-framework/deploy-spring-boot-java-app-with-maven-plugin)
+* [Azure Kubernetes Service](https://docs.microsoft.com/java/azure/spring-framework/deploy-spring-boot-java-app-on-kubernetes)
+  <br><br>
+
+Additional tooling support:
+
+* [Build Spring Boot Apps](https://code.visualstudio.com/docs/java/java-spring-boot) with [Spring Boot Extension Pack for Visual Studio Code](https://marketplace.visualstudio.com/items?itemName=Pivotal.vscode-boot-dev-pack)
+
 ## Quick Start
 
-The following excerpt illustrates how to integrate the Spring starters for Azure into your `pom.xml` file:
-
-```xml
-<dependencies>
-  <dependency>
-     <groupId>com.microsoft.azure</groupId>
-     <artifactId>azure-spring-boot</artifactId>
-  </dependency>
-  <dependency>
-     <groupId>com.microsoft.azure</groupId>
-     <artifactId>azure-active-directory-spring-boot-starter</artifactId>
-  </dependency>
-  <dependency>
-     <groupId>com.microsoft.azure</groupId>
-     <artifactId>azure-keyvault-secrets-spring-boot-starter</artifactId>
-  </dependency>
-  <dependency>
-     <groupId>com.microsoft.azure</groupId>
-     <artifactId>azure-storage-spring-boot-starter</artifactId>
-  </dependency>
-</dependencies>
-
-<dependencyManagement>
-  <dependencies>
-     <dependency>
-        <groupId>com.microsoft.azure</groupId>
-        <artifactId>azure-spring-boot-bom</artifactId>
-        <version>${azure.version}</version>
-        <type>pom</type>
-        <scope>import</scope>
-     </dependency>
-  </dependencies>
-</dependencyManagement>
-```
+Bootstrap your application with [Spring Initializr](https://start.spring.io/).
 
 {% endcapture %}
 
 {% capture related_resources %}
 
-### Getting Started Guides
+### Samples
 
-The following articles will show you how to get started with Spring Cloud for Azure:
+[Spring Cloud Azure Code Samples](https://github.com/Microsoft/spring-cloud-azure/tree/master/spring-cloud-azure-samples)
 
-* [Getting Started: Deploying a Spring Boot app to Azure](https://spring.io/guides/gs/spring-boot-for-azure/)
-* [How to use the Spring Boot Starter for Azure Storage](https://docs.microsoft.com/java/azure/spring-framework/configure-spring-boot-starter-java-app-with-azure-storage)
-* [How to use the Spring Boot Starter for Azure Active Directory](https://docs.microsoft.com/java/azure/spring-framework/configure-spring-boot-starter-java-app-with-azure-active-directory)
-* [How to use the Spring Boot Starter for Azure Event Hub](https://docs.microsoft.com/java/azure/spring-framework/configure-spring-cloud-stream-binder-java-app-azure-event-hub)
-* [How to use the Spring Boot Starter for Azure Key Vault](https://docs.microsoft.com/java/azure/spring-framework/configure-spring-boot-starter-java-app-with-azure-key-vault)
-* [How to use the Spring Boot Starter with Azure Cosmos DB DocumentDB API](https://docs.microsoft.com/java/azure/spring-framework/configure-spring-boot-starter-java-app-with-cosmos-db)
+[Spring Boot Azure Code Samples](https://github.com/Microsoft/azure-spring-boot/tree/master/azure-spring-boot-samples)
+
+[Spring Data for Azure CosmosDB Code Samples](https://github.com/Microsoft/spring-data-cosmosdb/tree/master/samplecode)
+
+[Spring Data Gremlin Code Samples](https://github.com/Microsoft/spring-data-gremlin/tree/master/examples/example)
 
 ### Reference Documentation
-
-The following links will provide developers with additional, detailed information for creating cloud-ready applications on Microsoft Azure using Spring and Java:
 
 * [Spring on Azure](https://docs.microsoft.com/java/azure/spring-framework/)
 * [Java Developer Guidance for Azure](http://docs.microsoft.com/java/azure/)
 * [Java API Documentation for Azure](https://azure.github.io/azure-sdk-for-java/)
 * [Azure Spring Boot on GitHub](https://github.com/Microsoft/azure-spring-boot)
+* [Azure Spring Cloud on Github](https://github.com/Microsoft/spring-cloud-azure)
 
 {% endcapture %}
 

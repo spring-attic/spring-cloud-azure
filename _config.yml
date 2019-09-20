@@ -19,17 +19,17 @@ gems:
 baseurl: /spring-cloud-azure
 
 # Name of the project for display in places like page titles
-name: Spring support for Azure
+name: Spring Cloud Azure
 
 # ID of the project in the metadata API at spring.io (if this is not a
 # valid project ID the javascript widgets in the home page will not work)
 project: spring-cloud-azure
 
 # Project github URL
-github_repo_url: https://github.com/Microsoft/azure-spring-boot
+github_repo_url: https://github.com/spring-cloud/spring-cloud-azure
 
 # Project forum URL
-# forum: http://forum.spring.io/forum/spring-projects/container
+forum: https://stackoverflow.com/questions/tagged/spring-cloud
 
 # If you want to include a custom pom.xml or gradle template set these value to true and add _include files
 custom_pom_template: false
