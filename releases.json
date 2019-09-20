@@ -21,8 +21,8 @@
     "projectReleases": [
 	    {
         "releaseStatus": "RELEASE",
-        "refDocUrl": "https://docs.microsoft.com/en-us/java/azure/spring-framework/spring-boot-starters-for-azure",
-        "apiDocUrl": "https://docs.microsoft.com/en-us/java/azure/spring-framework/spring-boot-starters-for-azure",
+        "refDocUrl": "https://docs.microsoft.com/en-us/azure/java/spring-framework",
+        "apiDocUrl": "https://docs.microsoft.com/en-us/azure/java/spring-framework",
         "groupId": "com.microsoft.azure",
         "artifactId": "azure-spring-boot",
         "repository": {
@@ -40,8 +40,8 @@
     },
     {
         "releaseStatus": "SNAPSHOT",
-        "refDocUrl": "https://docs.microsoft.com/java/azure/spring-framework",
-        "apiDocUrl": "https://docs.microsoft.com/java/azure/spring-framework",
+        "refDocUrl": "https://docs.microsoft.com/azure/java/spring-framework",
+        "apiDocUrl": "https://docs.microsoft.com/azure/java/spring-framework",
         "groupId": "org.springframework.cloud",
         "artifactId": "azure-spring-boot",
         "repository": {
@@ -59,8 +59,8 @@
     },
     {
         "releaseStatus": "RELEASE",
-        "refDocUrl": "https://docs.microsoft.com/java/azure/spring-framework",
-        "apiDocUrl": "https://docs.microsoft.com/java/azure/spring-framework",
+        "refDocUrl": "https://docs.microsoft.com/azure/java/spring-framework",
+        "apiDocUrl": "https://docs.microsoft.com/azure/java/spring-framework",
         "groupId": "com.microsoft.azure",
         "artifactId": "spring-cloud-azure",
         "repository": {
