@@ -29,7 +29,7 @@ project: spring-cloud-azure
 github_repo_url: https://github.com/spring-cloud/spring-cloud-azure
 
 # Project forum URL
-forum: https://stackoverflow.com/questions/tagged/spring-cloud
+forum: https://gitter.im/azure-spring-cloud/community
 
 # If you want to include a custom pom.xml or gradle template set these value to true and add _include files
 custom_pom_template: false
