@@ -1,3 +1,5 @@
+# spring-cloud-azure is no longer actively maintained by VMware, Inc.
+
 # spring-cloud-azure
 
 This project lists the ongoing efforts being worked on in conjunction with Microsoft
